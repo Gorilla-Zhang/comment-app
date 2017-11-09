@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import CommentApp from './CommentApp'
 import registerServiceWorker from './registerServiceWorker';
 
-export default class Index extends React.Component {
+export default class Root extends React.Component {
   render() {
     return (
       <div>
-        ppp
-    </div>
+        <CommentApp />
+      </div>
     )
   }
 
 }
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+ReactDOM.render(<Root />, document.getElementById('root'));
 registerServiceWorker();
